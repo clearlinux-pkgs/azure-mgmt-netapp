@@ -4,7 +4,7 @@
 #
 Name     : azure-mgmt-netapp
 Version  : 0.10.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/ce/a6/d04b34d6fea22793315db5dd6b7b89de9e7a76c53eda715ab2c9259725af/azure-mgmt-netapp-0.10.0.zip
 Source0  : https://files.pythonhosted.org/packages/ce/a6/d04b34d6fea22793315db5dd6b7b89de9e7a76c53eda715ab2c9259725af/azure-mgmt-netapp-0.10.0.zip
 Summary  : Microsoft Azure NetApp Files Management Client Library for Python
@@ -55,7 +55,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1588706020
+export SOURCE_DATE_EPOCH=1588792958
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -74,6 +74,9 @@ python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
+## Remove excluded files
+rm -f %{buildroot}/usr/lib/python3.8/site-packages/azure/mgmt/__init__.py
+rm -f %{buildroot}/usr/lib/python3.8/site-packages/azure/mgmt/__pycache__/__init__.cpython-38.pyc
 
 %files
 %defattr(-,root,root,-)
