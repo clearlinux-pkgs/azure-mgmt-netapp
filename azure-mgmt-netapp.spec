@@ -4,7 +4,7 @@
 #
 Name     : azure-mgmt-netapp
 Version  : 0.10.0
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/ce/a6/d04b34d6fea22793315db5dd6b7b89de9e7a76c53eda715ab2c9259725af/azure-mgmt-netapp-0.10.0.zip
 Source0  : https://files.pythonhosted.org/packages/ce/a6/d04b34d6fea22793315db5dd6b7b89de9e7a76c53eda715ab2c9259725af/azure-mgmt-netapp-0.10.0.zip
 Summary  : Microsoft Azure NetApp Files Management Client Library for Python
