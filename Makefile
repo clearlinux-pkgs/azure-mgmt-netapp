@@ -1,5 +1,5 @@
 PKG_NAME := azure-mgmt-netapp
-URL = https://files.pythonhosted.org/packages/ce/a6/d04b34d6fea22793315db5dd6b7b89de9e7a76c53eda715ab2c9259725af/azure-mgmt-netapp-0.10.0.zip
+URL = https://files.pythonhosted.org/packages/1c/03/e8620fd9a48fde3b6f3db552912ba903c14c319bd220e70aac9b12ec3f7d/azure-mgmt-netapp-0.14.0.zip
 ARCHIVES = 
 
 include ../common/Makefile.common
